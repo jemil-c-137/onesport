@@ -1,16 +1,9 @@
-import classes from './LivePage.module.scss';
-import type { FC } from 'react';
-
-interface LivePageProps {
-    className?: string;
-}
-
-export const LivePage: FC<LivePageProps> = (props) => {
-    const { className } = props;
-
+const LivePage = () => {
     return (
         <div>
             LivePage
         </div>
     );
 }
+
+export default LivePage;

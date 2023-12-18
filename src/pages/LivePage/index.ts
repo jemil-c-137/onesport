@@ -1,3 +1,3 @@
-import { LivePage } from "./ui/LivePage";
+import { LivePage } from "./ui/LivePage.async";
 
 export { LivePage }
