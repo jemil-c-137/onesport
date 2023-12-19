@@ -3,14 +3,17 @@ import { MainPage } from './pages/MainPage';
 import { LivePage } from './pages/LivePage';
 import { Suspense } from 'react';
 import { Sidebar } from './Sidebar';
-
-
+import { useTheme } from './shared/ui/theme/useTheme';
+import { classNames } from './classNames';
 
 export const App = () => {
 
+    const {theme, toggleTheme} = useTheme();
+
     return (
         <BrowserRouter>
-            <main>
+            <main className={classNames('app', [theme])}>
+                <button onClick={() => toggleTheme()} >{theme}</button>
                 <Sidebar />
                 <Routes>
                     <Route path='/' element={
