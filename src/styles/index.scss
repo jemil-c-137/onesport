@@ -1,0 +1,15 @@
+@import url('./themes/dark.scss');
+@import url('./themes/light.scss');
+@import url('./variables/global.scss');
+@import url('./reset.scss');
+
+html {
+    font-family: var(--font-family-main);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
