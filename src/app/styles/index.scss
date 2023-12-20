@@ -1,7 +1,7 @@
-@import url('./themes/dark.scss');
-@import url('./themes/light.scss');
-@import url('./variables/global.scss');
-@import url('./reset.scss');
+@import url('@/app/styles/themes/dark.scss');
+@import url('@/app/styles/themes/light.scss');
+@import url('@/app/styles/variables/global.scss');
+@import url('@/app/styles/reset.scss');
 
 html {
     font-family: var(--font-family-main);

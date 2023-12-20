@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { MainPage } from './pages/MainPage';
-import { LivePage } from './pages/LivePage';
 import { Suspense } from 'react';
-import { Sidebar } from './Sidebar';
-import { useTheme } from './shared/ui/theme/useTheme';
-import { classNames } from './classNames';
+
+import { MainPage } from '@/pages/MainPage';
+import { LivePage } from '@/pages/LivePage';
+import { Sidebar } from '@/widgets/ui/Sidebar';
+import { useTheme } from '@/shared/hooks/useTheme';
+import { classNames } from '@/shared/lib/classNames';
 
 export const App = () => {
 
@@ -19,12 +20,12 @@ export const App = () => {
                     <Route path='/' element={
                         <Suspense fallback={<div>Loading</div>}>
                             <MainPage />
-                        </Suspense>} 
+                        </Suspense>}
                     />
                     <Route path='/live' element={
                         <Suspense fallback={<div>Loading</div>}>
                             <LivePage />
-                        </Suspense>} 
+                        </Suspense>}
                     />
                 </Routes>
             </main> 

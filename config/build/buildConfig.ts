@@ -20,7 +20,7 @@ export function buildConfig(options: BuildOptions): Configuration {
         module: {
             rules: buildLoaders(options),
         },
-        resolve: buildResolvers(),
+        resolve: buildResolvers(options),
         plugins: buildPlugins(paths),
         devtool: mode === 'development' ? 'inline-source-map' : false,
         devServer: mode === 'development' ? buildDevServer(options) : undefined,
