@@ -10,6 +10,7 @@ html {
 .app {
     display: grid;
     grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr 1fr;
     color: var(--primary-color);
     background-color: var(--bg-color);
 }

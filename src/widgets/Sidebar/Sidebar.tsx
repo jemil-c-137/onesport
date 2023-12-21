@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 
 
-export const Sidebar = () => {
-
+export function Sidebar() {
 
     return (
         <div>
-            <h1>Onesport</h1>
-
             <ul>
                 <li>
                     <Link to={'/'}>

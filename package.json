@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jemil-c-137/onesport#readme",
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
