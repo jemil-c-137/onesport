@@ -1,0 +1,26 @@
+.sidebar {
+    grid-row: 1 / -1;
+    padding: 24px;
+    height: 100vh;
+
+    background-color: var(--bg-color-secondary);
+    border-right: 1px solid var(--border-color);
+
+    .menu {
+        margin-top: 74px;
+        margin-bottom: 40px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    a {
+        margin-bottom: 24px;
+        color: var(--secondary-color);
+        display: block;
+    }
+
+    a.active {
+        color: var(--active-color);
+        font-weight: 600;
+    }
+}

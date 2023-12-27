@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import { Sidebar } from '@/widgets/Sidebar/Sidebar';
+import { Sidebar } from '@/widgets/Sidebar';
 import { useTheme } from '@/shared/hooks/useTheme';
 import { classNames } from '@/shared/lib/classNames';
 import { AppRoutes } from '@/app/router';
-import { Navbar } from '@/widgets/Navbar/ui/Navbar';
+import { Navbar } from '@/widgets/Navbar';
 
 export const App = () => {
 

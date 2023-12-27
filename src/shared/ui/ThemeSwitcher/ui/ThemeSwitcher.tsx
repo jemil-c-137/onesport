@@ -7,8 +7,13 @@ export function ThemeSwitcher() {
 
     const { toggleTheme } = useTheme()
 
-    const clickHandler = () => {
+    const clickHandler = (e: React.MouseEvent) => {
         toggleTheme();
+        (e.target as HTMLButtonElement).classList.add(classes.active);
+
+        setTimeout(() => {
+            (e.target as HTMLButtonElement).classList.remove(classes.active)
+        }, 1000);
     }
 
     return (

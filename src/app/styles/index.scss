@@ -10,7 +10,26 @@ html {
 .app {
     display: grid;
     grid-template-columns: 3fr 9fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     color: var(--primary-color);
     background-color: var(--bg-color);
+
+    .content-container {
+        padding: 24px;
+    }
+
+    input {
+        border-radius: var(--border-radius);
+        padding: 10px 8px;
+        font-size: 12px;
+        outline: none;
+        border: 1px solid var(--border-color);
+        background: var(--accent-color);
+        color: var(--primary-color);
+
+
+        &:focus, &:active {
+            border-color: var(--active-color);
+        }
+    }
 }
