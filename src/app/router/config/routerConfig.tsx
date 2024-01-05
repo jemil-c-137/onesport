@@ -1,16 +1,16 @@
-import { ErrorPage } from "@/pages/ErrorPage"
-import { LivePage } from "@/pages/LivePage"
-import { MainPage } from "@/pages/MainPage"
-import { RouteProps } from "react-router-dom"
+import { ErrorPage } from '@/pages/ErrorPage'
+import { LivePage } from '@/pages/LivePage'
+import { MainPage } from '@/pages/MainPage'
+import { type RouteProps } from 'react-router-dom'
 
 export enum AppRoutes {
-    MAIN = "main",
-    LIVE = "live",
+    MAIN = 'main',
+    LIVE = 'live',
 }
 
 export const RouterPaths: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
-    [AppRoutes.LIVE]: '/live',
+    [AppRoutes.LIVE]: '/live'
 }
 
 export const routerConfig: Record<AppRoutes, RouteProps> = {

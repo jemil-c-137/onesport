@@ -1,3 +1,3 @@
-import AppRoutes from "./ui";
+import AppRoutes from './ui'
 
 export { AppRoutes }

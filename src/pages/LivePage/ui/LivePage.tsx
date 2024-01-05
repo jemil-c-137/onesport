@@ -3,7 +3,7 @@ const LivePage = () => {
         <div>
             LivePage
         </div>
-    );
+    )
 }
 
-export default LivePage;
+export default LivePage

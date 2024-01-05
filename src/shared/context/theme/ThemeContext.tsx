@@ -1,4 +1,4 @@
-import { createContext } from 'react';
-import { ThemeContext as ThemeContextInterface } from './types';
+import { createContext } from 'react'
+import { type ThemeContext as ThemeContextInterface } from './types'
 
-export const ThemeContext = createContext<ThemeContextInterface>({} as ThemeContextInterface);
+export const ThemeContext = createContext<ThemeContextInterface>({} as const as ThemeContextInterface)

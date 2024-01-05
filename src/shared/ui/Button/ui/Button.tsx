@@ -1,9 +1,11 @@
-import { PropsWithChildren } from 'react'
-import classes from './Button.module.scss';
+import { type ButtonHTMLAttributes, type PropsWithChildren } from 'react'
+import classes from './Button.module.scss'
 
-export function Button({ children }: PropsWithChildren) {
+interface ButtonProps extends PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> {}
+
+export function Button({ children, ...props }: ButtonProps) {
     return (
-        <button className={classes.button}>
+        <button {...props} className={classes.button}>
             { children }
         </button>
     )
