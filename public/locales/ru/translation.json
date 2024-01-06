@@ -2,5 +2,11 @@
     "mainPageHeading": "Главная страница",
     "changeLanguage": "EN 🇺🇸",
     "goPremium": "Премиум",
-    "loading": "Загрузка..."
+    "loading": "Загрузка...",
+    "appName": "OneSport",
+    "menu": "Меню",
+    "dashboard": "Dashboard",
+    "live": "Live",
+    "oops": "Ой!",
+    "unexpectedError": "Извините, произошла непредвиденная ошибка!"
 }

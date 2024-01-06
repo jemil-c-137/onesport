@@ -2,5 +2,11 @@
     "mainPageHeading": "Main page",
     "changeLanguage": "RU 🇷🇺",
     "goPremium": "Go Premium",
-    "loading": "loading..."
+    "loading": "loading...",
+    "appName": "OneSport",
+    "menu": "Menu",
+    "dashboard": "Dashboard",
+    "live": "Live",
+    "oops": "Ooops!",
+    "unexpectedError": "Sorry, an unexpected error has occurred."
 }

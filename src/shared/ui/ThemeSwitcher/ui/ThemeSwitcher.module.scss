@@ -4,19 +4,20 @@
     filter: drop-shadow(0 0 5px var(--active-color));
 
     .active {
-        animation-name: cssAnimation;
+        animation-name: rotating;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
     }
 
-    @keyframes cssAnimation {
+    @keyframes rotating {
         from {
-            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
+        
         to {
-            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
         }
     }
 

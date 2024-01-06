@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom'
 
 export default function ErrorPage() {
+    const { t } = useTranslation()
     const error = useRouteError()
 
     const message = (): string => {
@@ -11,8 +13,8 @@ export default function ErrorPage() {
 
     return (
         <div id="error-page">
-            <h1>Oops!</h1>
-            <p>Sorry, an unexpected error has occurred.</p>
+            <h1>{t('oops')}</h1>
+            <p>{t('unexpectedError')}</p>
             <p>
                 <i>{message()}</i>
             </p>

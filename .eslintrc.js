@@ -3,6 +3,11 @@ module.exports = {
     browser: true,
     es2021: true
   },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   extends: [
     'standard-with-typescript',
     'plugin:react/recommended',
@@ -22,7 +27,8 @@ module.exports = {
     {
       files: ["**/*.tsx"],  // Adjust the pattern based on your component file naming or location
       rules: {
-        "@typescript-eslint/explicit-function-return-type": "off"
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        'i18next/no-literal-string': 2
       }
     }
   ],
@@ -32,7 +38,8 @@ module.exports = {
     project: ['tsconfig.json', 'tsconfig.node.json']
   },
   plugins: [
-    'react'
+    'react',
+    'i18next'
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -40,8 +47,9 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
     'space-before-function-paren': ['error', 'never'],
+    '@typescript-eslint/no-non-null-assertion': 'off'
   },
   globals: {
     _IS_DEV_: true,
-},
+  },
 }

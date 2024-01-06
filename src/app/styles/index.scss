@@ -1,11 +1,10 @@
-@import url('@/app/styles/themes/dark.scss');
-@import url('@/app/styles/themes/light.scss');
-@import url('@/app/styles/variables/global.scss');
-@import url('@/app/styles/reset.scss');
+@import '@/app/styles/themes/dark';
+@import '@/app/styles/themes/light';
+@import '@/app/styles/variables/global';
+@import '@/app/styles/reset';
 
 html {
     font-family: var(--font-family-main);
-    font-size: var(--font-regular);
     font-size: var(--font-size-m);
     line-height: var(--font-line-m);
 }
