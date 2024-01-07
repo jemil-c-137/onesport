@@ -48,12 +48,13 @@ export function classNames(base: string | Conditional | string[], additionalClas
 function processClasses(baseClass: string, classes: Conditional | string[]): string {
     if (Array.isArray(classes)) {
         // Join array of class names
-        baseClass = [baseClass, classes.join(' ')].join(' ')
+        const resultClasses = [baseClass, classes.join(' ')]
+        baseClass = resultClasses[0] === '' ? resultClasses.slice(1).join(' ') : resultClasses.join(' ')
     } else {
         // Concatenate class names based on the conditional object
         Object.entries(classes).forEach(([value, key]) => {
             if (key) {
-                baseClass = baseClass + ` ${value}`
+                baseClass = baseClass + (baseClass === '' ? value : ` ${value}`)
             }
         })
     }
