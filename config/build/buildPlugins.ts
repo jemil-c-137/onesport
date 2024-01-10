@@ -13,7 +13,7 @@ export function buildPlugins(paths: BuildPaths, isDev: boolean): webpack.Webpack
             filename: 'css/[name].[contenthash:8].css'
         }),
         new webpack.DefinePlugin({
-            __IS_DEV__: JSON.stringify(isDev)
+            _IS_DEV_: JSON.stringify(isDev)
         }),
         new webpack.HotModuleReplacementPlugin()
     ]
