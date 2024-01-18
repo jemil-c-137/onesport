@@ -12,3 +12,7 @@ declare module '*.svg' {
 }
 
 declare const _IS_DEV_: boolean
+
+declare module '*.jpg'
+declare module '*.png'
+declare module '*.webp'

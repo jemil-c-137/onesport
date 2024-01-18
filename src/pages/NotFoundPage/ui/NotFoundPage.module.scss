@@ -1,0 +1,25 @@
+.notFoundPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    color: var(--active-color);
+    padding: 64px;
+    text-align: center;
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 24px;;
+    }
+
+    img {
+        max-width: 200px;
+        filter: drop-shadow(0 0 15px var(--active-color));
+        border-radius: 75px;
+    }
+}

@@ -7,6 +7,6 @@
     "menu": "Menu",
     "dashboard": "Dashboard",
     "live": "Live",
-    "oops": "Ooops!",
-    "unexpectedError": "Sorry, an unexpected error has occurred."
+    "oops": "Ooops! 404!",
+    "pageNotFound": "This page tried to challenge Zlatan but couldn't keep up. It's not on my level. Head back to the homepage for a performance worthy of Zlatan."
 }

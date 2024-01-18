@@ -33,9 +33,15 @@ export function buildLoaders(isDev: boolean): webpack.RuleSetRule[] {
         use: ['@svgr/webpack']
     }
 
+    const fileLoader = {
+        test: /\.(png|jpe?g|gif|webp)$/i,
+        type: 'asset/resource'
+    }
+
     return [
         tsLoader,
         cssLoader,
-        svgLoader
+        svgLoader,
+        fileLoader
     ]
 }
