@@ -6,9 +6,12 @@ import { ThemeProvider } from '@/shared/context/theme/ThemeProvider'
 
 // import i18n (needs to be bundled ;))
 import './app/config/i18n/i18n'
+import ErrorBoundary from './pages/ErrorBoundary/ui/ErrorBoundary'
 
 const container = document.getElementById('app')!
 const root = createRoot(container) // createRoot(container!) if you use TypeScript
 root.render(<ThemeProvider>
-    <App />
+    <ErrorBoundary>
+        <App />
+    </ErrorBoundary>
 </ThemeProvider>)

@@ -7,6 +7,7 @@
     "menu": "Menu",
     "dashboard": "Dashboard",
     "live": "Live",
+    "unknownError": "Something went wrong. Try reloading the page and get back in the game.",
     "oops": "Ooops! 404!",
     "pageNotFound": "This page tried to challenge Zlatan but couldn't keep up. It's not on my level. Head back to the homepage for a performance worthy of Zlatan."
 }
