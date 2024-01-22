@@ -1,5 +1,6 @@
-import React, { Component, type ErrorInfo, type ReactNode } from 'react'
+import { Component, type ErrorInfo, type ReactNode } from 'react'
 import { type WithTranslation, withTranslation } from 'react-i18next'
+import classes from './ErrorBoundary.module.scss'
 
 interface Props extends WithTranslation {
     children?: ReactNode
@@ -25,7 +26,9 @@ class ErrorBoundary extends Component<Props, State> {
 
     public render() {
         if (this.state.hasError) {
-            return <h1>{this.props.t('unknownError')}</h1>
+            return <div className={classes.errorBoundary}>
+                <h1>{this.props.t('unknownError')}</h1>
+            </div>
         }
 
         return this.props.children
