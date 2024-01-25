@@ -5,17 +5,11 @@ import { useTheme } from '@/shared/hooks/useTheme'
 import { classNames } from '@/shared/lib/classNames'
 import { AppRoutes } from '@/app/router'
 import { Navbar } from '@/widgets/Navbar'
-import { Suspense, useEffect } from 'react'
+import { Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export const App = () => {
     const { t } = useTranslation()
-
-    useEffect(() => {
-        if (Math.random() < 0.5) {
-            throw new Error('error')
-        }
-    }, [])
 
     const { theme } = useTheme()
 
