@@ -5,7 +5,7 @@ interface ButtonProps extends PropsWithChildren<ButtonHTMLAttributes<HTMLButtonE
 
 export function Button({ children, ...props }: ButtonProps) {
     return (
-        <button {...props} className={classes.button}>
+        <button data-testid="button" {...props} className={classes.button}>
             { children }
         </button>
     )
