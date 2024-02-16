@@ -9,6 +9,10 @@ const config: Config = {
             lines: 80,
             statements: -10
         }
+    },
+    moduleNameMapper: {
+        '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.ts',
+        '\\.(gif|ttf|eot|svg)$': '<rootDir>/__mocks__/fileMock.ts'
     }
 }
 
