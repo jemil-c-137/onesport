@@ -30,6 +30,12 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         'i18next/no-literal-string': 2
       }
+    },
+    {
+      files: ['**/src/**/*.test.{tsx,ts}'],
+      rules: {
+        'i18next/no-literal-string': 'off'
+      }
     }
   ],
   parserOptions: {

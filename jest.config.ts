@@ -10,15 +10,14 @@ const config: Config = {
             statements: -10
         }
     },
-    testEnvironment: 'jsdom',
-    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
     setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
     moduleNameMapper: {
-        '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.ts',
-        '\\.(gif|ttf|eot|svg)$': '<rootDir>/__mocks__/fileMock.ts',
+        '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
+        '\\.(gif|ttf|eot|svg)$': '<rootDir>/__mocks__/fileMock.js',
         '@/shared(.*)$': '<rootDir>/src/shared/$1'
     },
-    modulePaths: ['<rootDir>src']
+    testEnvironment: 'jsdom',
+    moduleDirectories: ['node_modules', 'src']
 }
 
 export default config
